@@ -1,0 +1,26 @@
+### GET all tasks
+GET http://localhost:4000/api/task/
+
+### GET only one task
+GET http://localhost:4000/api/task/621e79ea46dbc612778a114c
+
+###POST save a task
+POST http://localhost:4000/api/task/
+content-type: application/json
+
+{
+    "title": "entrenar",
+    "description": "Tengo que entregar"
+}
+
+###PUT edit a task
+PUT http://localhost:4000/api/task/621e861e0db01569bbc984c5
+Content-Type: application/json
+
+{
+    "title": "entrenar",
+    "description": "Tengo que entreNar"
+}
+
+###DELETE
+DELETE http://localhost:4000/api/task/621e861e0db01569bbc984c5
